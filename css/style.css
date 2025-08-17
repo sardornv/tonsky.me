@@ -5,8 +5,6 @@ body{
 .flash{
     display: none;
     box-shadow: 0 0 0 9999px #000;
-    top: 0;
-    left: 0;
     position: absolute;
 }
 
@@ -25,6 +23,7 @@ body.dark >.button{
 }
 
 body.dark >.moon{
+    display: block;
     background-color: #15FB1F;
     border-radius: 50%;
     position: sticky;
@@ -33,3 +32,21 @@ body.dark >.moon{
 .moon:hover{
     opacity: 60%;
 }
+
+.moon{
+    display: none;
+}
+
+body.dark >.sun{
+    display: none;
+}
+
+.range::-webkit-slider-runnable-track{
+    background:black;
+    border-radius: 10px;
+    color: white;
+}
+
+.range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    color: white;
